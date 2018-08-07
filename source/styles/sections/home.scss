@@ -1,0 +1,70 @@
+.main {
+  position: relative;
+}
+
+.logo {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+.diamond_1 {
+  position: absolute;
+  top: -325px;
+  right: -531px;
+  z-index: 0;
+  width: 700px;
+  height: 923px;
+  background: #f1ece9;
+  /* Rotate */
+  transform: rotate(-45deg);
+  /* Rotate Origin */
+  transform-origin: 0 100%;
+}
+
+.diamond_2 {
+  position: absolute;
+  top: 169px;
+  left: 164px;
+  z-index: 0;
+  width: 350px;
+  height: 300px;
+  background: #1b1b1b;
+  /* Rotate */
+  transform: rotate(-45deg);
+  /* Rotate Origin */
+  transform-origin: 0 100%;
+}
+
+.diamond_3 {
+  position: absolute;
+  top: 344px;
+  right: 41px;
+  z-index: 0;
+  width: 281px;
+  height: 281px;
+  background: #1b1b1b;
+  /* Rotate */
+  transform: rotate(-45deg);
+  /* Rotate Origin */
+  transform-origin: 0 100%;
+
+  &--text {
+    /* Rotate */
+    transform: rotate(45deg);
+    text-align: center;
+  }
+
+  .header__title {
+    font-family: $ff-black;
+    color: #00aab7;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+  }
+
+  .title__text {
+    font-family: $ff-regular;
+    font-size: 0.8rem;
+    color: #f1ece9;
+  }
+}

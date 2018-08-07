@@ -40,7 +40,7 @@
   position: absolute;
   top: 344px;
   right: 41px;
-  z-index: 0;
+  z-index: 4;
   width: 281px;
   height: 281px;
   background: #1b1b1b;
@@ -66,5 +66,33 @@
     font-family: $ff-regular;
     font-size: 0.8rem;
     color: #f1ece9;
+  }
+}
+
+.diamond_4 {
+  display: block;
+  width: 540px;
+  height: 540px;
+  background-color: #1b1b1b;
+  /* Rotate */
+  transform: rotate(45deg);
+}
+
+.thumb {
+  background: url("../images/pexels-photo.jpg");
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  margin: 40px 166px;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: -125px;
+    left: -149px;
+    width: 800px;
+    height: 800px;
+    background: inherit;
+    transform: rotate(-45deg);
   }
 }

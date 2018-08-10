@@ -50,21 +50,22 @@
   transform-origin: 0 100%;
 
   &--text {
-    /* Rotate */
-    transform: rotate(45deg);
     text-align: center;
+    margin-left: auto;
+    padding: 50px 20px;
+    transform: rotate(45deg);
   }
 
   .header__title {
     font-family: $ff-black;
     color: #00aab7;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-transform: uppercase;
   }
 
   .title__text {
     font-family: $ff-regular;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color: #f1ece9;
   }
 }
@@ -95,4 +96,23 @@
     background: inherit;
     transform: rotate(-45deg);
   }
+}
+
+.diamond_5 {
+  display: block;
+  position: absolute;
+  top: 215px;
+  right: 415px;
+  width: 50px;
+  height: 50px;
+  background-color: #00aab7;
+  /* Rotate */
+  transform: rotate(45deg);
+}
+
+.button_start {
+  color: #f1ece9;
+  text-decoration: none;
+  background: #00aab7;
+  padding: 5px 10px;
 }

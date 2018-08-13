@@ -1,0 +1,69 @@
+.header {
+    //background: url("../images/about-bg.jpg") top right;
+    //background-size: cover;
+    //height: 100vh;
+
+    .wrapper {
+        position: relative;
+    }
+
+    &__top {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 41px 0 32px;
+        margin-bottom: 30px;
+    }
+}
+
+.intro {
+    position: relative;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    color: #f1ece9;
+
+    &__banner {
+        position: relative;
+        padding: 100px 0 0;
+
+        img {
+            width: 60%;
+            position: relative;
+            bottom: 70px;
+            right: 12px;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: 72px;
+            left: -15px;
+            right: 0;
+            height: 2px;
+            background-color: #282828;
+        }
+    }
+
+    .main__title {
+        position: relative;
+        font-size: 4rem;
+        font-weight: 900;
+        line-height: 1.2;
+        z-index: 1;
+        float: left;
+    }
+
+    &__options {
+        display: flex;
+
+        .options_1,
+        .options_2 {
+            margin-right: 50px;
+        }
+    }
+}

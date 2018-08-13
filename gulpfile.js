@@ -42,33 +42,34 @@ gulp.task('styles:compile', function() {
 });
 
 /*------------ JS ------------*/
-// gulp.task('js', function() {
-//     return gulp.src([
-//         'source/js/init.js',
-//         'source/js/scroll.js',
-//         'source/js/send_form.js',
-//         'source/js/toggle_menu.js',
-//         'source/js/carousel.js',
-//         'source/js/hover.js'
-//     ])
-//         .pipe(sourcemaps.init())
-//         .pipe(concat('main.min.js'))
-//         .pipe(uglify())
-//         .pipe(sourcemaps.write())
-//         .pipe(gulp.dest('build/js'));
-// });
+gulp.task('js', function() {
+    return gulp.src([
+        // 'source/js/init.js',
+        // 'source/js/scroll.js',
+        // 'source/js/send_form.js',
+        'source/js/toggle_menu.js',
+        'source/js/main_menu.js'
+        // 'source/js/carousel.js',
+        // 'source/js/hover.js'
+    ])
+        .pipe(sourcemaps.init())
+        .pipe(concat('main.min.js'))
+        .pipe(uglify())
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest('build/js'));
+});
 
 /*------------ jQuery ------------*/
-// gulp.task('jquery', function() {
-//     return gulp.src([
-//         'source/js/jquery.js'
-//     ])
-//         .pipe(sourcemaps.init())
-//         .pipe(concat('jquery.min.js'))
-//         .pipe(uglify())
-//         .pipe(sourcemaps.write())
-//         .pipe(gulp.dest('build/js'));
-// });
+gulp.task('jquery', function() {
+    return gulp.src([
+        'source/js/jquery.js'
+    ])
+        .pipe(sourcemaps.init())
+        .pipe(concat('jquery.min.js'))
+        .pipe(uglify())
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest('build/js'));
+});
 
 /*------------ Sprite ------------*/
 // gulp.task('sprite', function(cb) {
@@ -115,13 +116,13 @@ gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images'));
 gulp.task('watch', function() {
     gulp.watch('source/templates/**/*.pug', gulp.series('templates:compile'));
     gulp.watch('source/styles/**/*.scss', gulp.series('styles:compile'));
-    //gulp.watch('source/js/**/*.js', gulp.series('js'));
+    gulp.watch('source/js/**/*.js', gulp.series('js'));
 });
 
 /*------------ Default ------------*/
 gulp.task('default', gulp.series(
     'clean',
-    gulp.parallel('templates:compile', 'styles:compile', 'copy'),
+    gulp.parallel('templates:compile', 'styles:compile', 'js', 'jquery', 'copy'),
     gulp.parallel('watch', 'server')
     )
 );

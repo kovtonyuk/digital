@@ -48,7 +48,8 @@ gulp.task('js', function() {
         // 'source/js/scroll.js',
         // 'source/js/send_form.js',
         'source/js/toggle_menu.js',
-        'source/js/main_menu.js'
+        'source/js/main_menu.js',
+        'source/js/number_animated.js'
         // 'source/js/carousel.js',
         // 'source/js/hover.js'
     ])

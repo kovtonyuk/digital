@@ -20,7 +20,6 @@ $button-middle-width: 25px;
   transition: opacity .25s ease;
   &.active {
     position: relative;
-    right: 70px;
     .top {
       transform: translateY(11px) translateX(0) rotate(45deg);
       background: $color-link;

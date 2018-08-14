@@ -6,6 +6,10 @@
   -webkit-box-align: center;
   justify-content: center;
 
+  @media (max-width: 800px) {
+    display: none;
+  }
+
   &:before {
     content: "";
     position: absolute;
@@ -38,11 +42,15 @@
   li {
     position: relative;
     width: 100%;
-    top: 0;
+    top: -8px;
     left: 15px;
     color: #f1ece9;
-    font-size: 1rem;
+    font-size: 1.3rem;
     cursor: pointer;
+
+    @media (max-width: 1000px) {
+      font-size: 1rem;
+    }
 
     &:before {
       position: absolute;
@@ -50,7 +58,7 @@
       left: -15px;
       color: #555;
       font-size: 1rem;
-      font-weight: 300;
+      font-weight: 900;
     }
 
     &:nth-child(1):before {
@@ -90,7 +98,7 @@
       top: 20px;
       left: -15px;
       color: #f1ece9;
-      font-weight: 300;
+      font-weight: 900;
       opacity: 0;
       visibility: hidden;
     }

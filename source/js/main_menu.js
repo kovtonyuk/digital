@@ -1,6 +1,6 @@
 $(document).ready(function() {
     function e(t) {
-        $(".side-nav").children().removeClass("is-active"),
+        $(".side-nav").children().removeClass("is-active");
             $(".side-nav").children().eq(t).addClass("is-active")
     }
         $(".side-nav li").click(function() {
@@ -18,7 +18,7 @@ $(document).ready(function() {
                 , n = $(".side-nav").children().index(t)
                 , s = $(".side-nav").children().length - 1
                 , r = s;
-            e(s),
-                i(n, r, s)
+            e(s);
+                i(n, r, s);
         });
 });

@@ -1,5 +1,5 @@
 .footer {
-  background: #2a2a2a;
+  background: #0e0e0e;
   color: #f1ece9;
   font-family: $ff-bold;
 
@@ -13,21 +13,21 @@
   }
 
   &__bottom {
-    padding: 26px 26px 0;
+    padding: 26px 26px 30px;
     text-align: center;
   }
 
   &__header {
     position: relative;
     width: 250px;
-    height: 200px;
+    height: 100px;
     margin: 0 auto;
   }
 
   &__contact--bg {
     width: 150px;
     height: 150px;
-    background: url("../images/contact-bg.png") no-repeat;
+    background: url("../../images/contact-bg.png") no-repeat;
     background-size: cover;
     margin: 0 auto;
 
@@ -37,10 +37,8 @@
   }
 
   &__title {
-    position: absolute;
-    top: 54px;
-    left: 19px;
-    font-size: 2.1rem;
+    margin: 0 auto;
+    font-size: 1.5rem;
     text-transform: uppercase;
 
     @media (max-width: 330px) {
@@ -61,7 +59,7 @@
   }
 
   &__item {
-    width: 27%;
+    width: 23%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -98,22 +96,22 @@
 
     @media (max-width: 360px) {
       width: 100%;
-      padding: 0 30px 30px;
+      //padding: 0 30px 30px;
       margin-bottom: 0;
     }
   }
 
   &__icon--bg {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     margin-bottom: 20px;
-    background: url(../images/contact__info-bg.png) no-repeat;
+    background: url('../../images/contact__info-bg.png') no-repeat;
     background-size: cover;
   }
 
   i {
-    font-size: 2.5em;
-    margin: 15px 0 0 45px
+    font-size: 2rem;
+    margin: 9px 0 0 35px;
   }
 
   .fa-map-marked-alt {
@@ -123,33 +121,34 @@
   .item__text {
     margin: auto;
     text-align: left;
+    font-size: .9rem;
 
     h3 {
       margin: 0 auto 15px;
+      font-size: 1.2rem;
     }
   }
 
   .footer__copy {
-    margin-bottom: 30px;
+    font-size: 0.6rem;
+    letter-spacing: 1px;
   }
 
   .step__up {
-    position: relative;
-    width: 0;
-    height: 0;
-    border-left: 70px solid transparent;
-    border-right: 70px solid transparent;
-    border-bottom: 70px solid #136167;
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background: #13616794;
+    border-radius: 50%;
     margin: 0 auto;
   }
 
   .step__text {
     color: #f1ece9;
     text-decoration: none;
-    position: absolute;
-    top: 30px;
-    left: -17px;
-    font-family: $ff-regular;
-    font-size: 1.2rem;
+    font-size: 2rem;
+    margin: 8px;
   }
 }

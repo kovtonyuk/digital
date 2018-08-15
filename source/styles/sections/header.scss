@@ -20,7 +20,7 @@
 }
 
 .intro {
-    background: url("../images/about-bg.jpg") no-repeat bottom right;
+    background: url("../../images/about-bg.jpg") no-repeat bottom right;
     background-size: contain;
     position: relative;
     display: flex;
@@ -30,6 +30,23 @@
     justify-content: center;
     margin: 0 auto;
     color: #f1ece9;
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      width: 100%;
+      height: 2px;
+      max-width: 100%;
+      background-color: #555;
+      opacity: .35;
+      z-index: 10;
+    }
 
     @media (max-width: 550px) {
         background-size: 150%;
@@ -71,50 +88,6 @@
         }
     }
 
-    /*-=-=-=-=-=-=-=-=-=-=-=- */
-    /* Column Grids */
-    /*-=-=-=-=-=-=-=-=-=-=-=- */
-
-    //.col_half {
-    //    width: 49%;
-    //}
-    //
-    //.col_third {
-    //    width: 32%;
-    //}
-    //
-    //.col_fourth {
-    //    width: 23.5%;
-    //}
-    //
-    //.col_fifth {
-    //    width: 18.4%;
-    //}
-    //
-    //.col_sixth {
-    //    width: 15%;
-    //}
-    //
-    //.col_three_fourth {
-    //    width: 74.5%;
-    //}
-    //
-    //.col_twothird {
-    //    width: 66%;
-    //}
-
-    //.col_half, .col_third, .col_twothird, .col_fourth, .col_three_fourth, .col_fifth {
-    //    position: relative;
-    //    display: inline-block;
-    //    float: left;
-    //    margin-right: 2%;
-    //    margin-bottom: 20px;
-    //}
-    //
-    //.end {
-    //    margin-right: 0 !important;
-    //}
-
     /* Column Grids End */
     .counter {
         padding: 20px 0;
@@ -126,7 +99,6 @@
         font-weight: normal;
         margin-top: 10px;
         margin-bottom: 0;
-        //text-align: center;
     }
 
     .count-text {
@@ -134,13 +106,10 @@
         font-weight: normal;
         margin-top: 10px;
         margin-bottom: 0;
-        //text-align: center;
     }
 
     .fa-2x {
         margin: 0 auto;
-        //float: none;
-        //display: table;
         color: #136167;
     }
 
@@ -152,7 +121,6 @@
         width: 20%;
 
         @media (max-width: 980px) {
-            //width: 50%;
             margin-right: 4%;
             padding: 5px;
             box-sizing: border-box;

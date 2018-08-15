@@ -45,7 +45,7 @@ gulp.task('styles:compile', function() {
 gulp.task('js', function() {
     return gulp.src([
         // 'source/js/init.js',
-        // 'source/js/scroll.js',
+        'source/js/scroll.js',
         // 'source/js/send_form.js',
         'source/js/toggle_menu.js',
         'source/js/main_menu.js',

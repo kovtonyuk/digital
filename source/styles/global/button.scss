@@ -1,0 +1,36 @@
+.btn__uppercase {
+  text-transform: uppercase;
+}
+
+.button__header {
+  line-height: 3;
+  text-align: center;
+  margin-bottom: 100px;
+  width: 200px;
+  height: 50px;
+  background: #003d60;
+  border-radius: 10px;
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+
+  .btn__header {
+    color: #f1ece9;
+    text-decoration: none;
+  }
+}
+
+.button__about {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.btn__about {
+  padding: 10px 20px;
+  color: #f1ece9;
+  font-family: $ff-bold;
+  text-decoration: none;
+  background: #003d60;
+  border-radius: 20px;
+}

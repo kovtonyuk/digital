@@ -1,0 +1,154 @@
+#contact {
+    //background: url("../../images/map.png") no-repeat center;
+    //background-size: cover;
+}
+
+.contact {
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    color: #f1ece9;
+
+    @media (max-width: 550px) {
+        background-size: 150%;
+        background-position: bottom center;
+    }
+
+    @media (max-width: 450px) {
+        background-size: 200%;
+        background-position: bottom right;
+    }
+
+    .contact__title {
+        font-family: $ff-bold;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 900;
+        line-height: 1.2;
+        z-index: 1;
+        margin: 50px auto 20px;
+    }
+
+    .title__text {
+        font-family: $ff-bold;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 900;
+        line-height: 1.2;
+        z-index: 1;
+        margin-bottom: 50px;
+    }
+
+    .options__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 0 50px;
+        padding: 0;
+
+        @media (max-width: 980px) {
+            justify-content: center;
+        }
+    }
+
+    .options {
+        flex-wrap: wrap;
+        margin: 0 0 50px;
+        padding: 0;
+        width: 25%;
+        //margin-bottom: 50px;
+
+        @media (max-width: 980px) {
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    .between {
+        width: 20px;
+        height: 127px;
+        margin: 33px 0;
+
+        &__block {
+            width: 100%;
+        }
+
+        @media (max-width: 980px) {
+            display: none;
+        }
+    }
+
+    .title__block {
+        color: #00aab7;
+        font-family: $ff-black;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 900;
+        z-index: 1;
+    }
+
+    .block__text {
+        font-family: $ff-regular;
+    }
+
+    .form {
+        width: 100%;
+        position: relative;
+        margin: auto;
+        padding: 24px 50px 38px 28px;
+        border-radius: 3px;
+        color: #f1ece9;
+        text-align: left;
+        background-color: rgba(2,22,35,0.71);
+
+        &__fields {
+            margin-bottom: 32px;
+        }
+
+        &__input {
+            background: transparent;
+            color: #b1babf;
+            width: 100%;
+            display: block;
+            margin: auto auto 6px 0;
+            padding: 18px 20px;
+            border: none;
+            border-bottom: 1px solid #f1ece9;
+            border-radius: 3px;
+            font-size: 0.875rem;
+
+            @media (min-width: 320px) and (max-width: 810px) {
+                width: 100%;
+            }
+        }
+
+        .button {
+            padding: 27px 50px;
+            border: none;
+            color: #f1ece9;
+            background: #00aab7;
+            font-family: $ff-bold;
+            border-radius: 10px;
+
+            @media (max-width: 424px) {
+                line-height: 1.5;
+                padding: 10px 10px;
+            }
+
+            &:hover {
+                color: darken(#f1ece9, 7%);
+                background: lighten(#00aab7, 7%);
+            }
+        }
+
+        .textarea {
+            margin-bottom: 37px;
+        }
+    }
+}
